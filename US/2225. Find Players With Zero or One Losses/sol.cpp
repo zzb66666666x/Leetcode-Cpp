@@ -24,8 +24,8 @@ public:
         }
         sort(ans0.begin(), ans0.end());
         sort(ans1.begin(), ans1.end());
-        ret.push_back(ans0);
-        ret.push_back(ans1);
+        ret.push_back(move(ans0));
+        ret.push_back(move(ans1));
         return ret;
     }
 };
